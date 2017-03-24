@@ -10,14 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var endTime:Double = 0.0
-    
-    var startTime:Double = 0.0
-    
-    @IBOutlet weak var label: UILabel!
-    
-    @IBOutlet weak var mes: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -36,7 +28,7 @@ class ViewController: UIViewController {
     
     
     func test(){
-        self.startTime = CFAbsoluteTimeGetCurrent()
+        
         // facility ============================
         let postFacility = [
             POST.facility_id: "0"
@@ -223,20 +215,10 @@ class ViewController: UIViewController {
             
             // print test data
             print("ISSUE BY FACILITY: \(data.count)")
-            self.endTime = CFAbsoluteTimeGetCurrent() - self.startTime
         }
         // ============================
         
         
-        
-        var bol = true
-        while bol {
-            if endTime != 0.0{
-                self.mes.text = "Downloaded done!"
-                self.label.text = String(format: "%.2f", endTime) + " seconds"
-                bol = false
-            }
-        }
         
     }
 }
