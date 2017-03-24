@@ -12,6 +12,7 @@
 		F59022BB1E84BB6F00728B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59022B91E84BB6F00728B9E /* Main.storyboard */; };
 		F59022BD1E84BB6F00728B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59022BC1E84BB6F00728B9E /* Assets.xcassets */; };
 		F59022C01E84BB6F00728B9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59022BE1E84BB6F00728B9E /* LaunchScreen.storyboard */; };
+		F59022D21E84FDE000728B9E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59022D11E84FDE000728B9E /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F59022BC1E84BB6F00728B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F59022BF1E84BB6F00728B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F59022C11E84BB6F00728B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F59022D11E84FDE000728B9E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				F59022B71E84BB6F00728B9E /* ViewController.swift */,
+				F59022D11E84FDE000728B9E /* LoginViewController.swift */,
 			);
 			name = viewcontrollers;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59022D21E84FDE000728B9E /* LoginViewController.swift in Sources */,
 				F59022B81E84BB6F00728B9E /* ViewController.swift in Sources */,
 				F59022B61E84BB6F00728B9E /* AppDelegate.swift in Sources */,
 			);
@@ -340,6 +344,7 @@
 				F59022C61E84BB6F00728B9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
