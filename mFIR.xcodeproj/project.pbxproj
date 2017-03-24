@@ -54,14 +54,54 @@
 		F59022B41E84BB6F00728B9E /* mFIR */ = {
 			isa = PBXGroup;
 			children = (
+				F59022CB1E84BCB000728B9E /* callbacks */,
+				F59022CA1E84BC9F00728B9E /* connection */,
+				F59022C91E84BC8200728B9E /* coredata */,
+				F59022C81E84BC4800728B9E /* models */,
+				F59022C71E84BC3C00728B9E /* viewcontrollers */,
 				F59022B51E84BB6F00728B9E /* AppDelegate.swift */,
-				F59022B71E84BB6F00728B9E /* ViewController.swift */,
 				F59022B91E84BB6F00728B9E /* Main.storyboard */,
 				F59022BC1E84BB6F00728B9E /* Assets.xcassets */,
 				F59022BE1E84BB6F00728B9E /* LaunchScreen.storyboard */,
 				F59022C11E84BB6F00728B9E /* Info.plist */,
 			);
 			path = mFIR;
+			sourceTree = "<group>";
+		};
+		F59022C71E84BC3C00728B9E /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				F59022B71E84BB6F00728B9E /* ViewController.swift */,
+			);
+			name = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		F59022C81E84BC4800728B9E /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		F59022C91E84BC8200728B9E /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = coredata;
+			sourceTree = "<group>";
+		};
+		F59022CA1E84BC9F00728B9E /* connection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = connection;
+			sourceTree = "<group>";
+		};
+		F59022CB1E84BCB000728B9E /* callbacks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = callbacks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
