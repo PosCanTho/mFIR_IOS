@@ -214,7 +214,7 @@ class FirServices {
                         print(TAG + "Parsing JSON error!")
                         return
                 }
-                let facility = Facility(id: id, name: name, typeName: typeName, usageStatus: usageStatus, rootId: rootId)
+                let facility = Facility(facilityId: id, facilityName: name, facilityTypeName: typeName, facilityUsageStatus: usageStatus, facilityRootId: rootId)
                 listFacility.append(facility)
             }
             
