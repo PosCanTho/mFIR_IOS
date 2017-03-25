@@ -9,8 +9,8 @@
 import Foundation
 
 class IssueStatus{
-    let typeNameId:String
-    let typeNameName:String
+    var typeNameId:String
+    var typeNameName:String
     
     init(typeNameId:String, typeNameName:String){
         self.typeNameId = typeNameId

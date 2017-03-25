@@ -11,7 +11,6 @@ import Foundation
 class FirServices {
     
     private static let user:String = "username=huynhducviet&password=UUNpZzQxYXN5VWY4MHIrL0FNN3hIaEtOU0VvPQ==&"
-    private static var totalByte:Int = 0
     
     // ============================
     static func loadData(requestId: Constants.REQUEST_ID, post: Dictionary<String, String>, callback: @escaping (_ data: Any) -> Void){

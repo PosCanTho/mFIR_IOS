@@ -9,9 +9,9 @@
 import Foundation
 
 class ComponentType {
-    let componentTypeId:String
-    let componentTypeName:String
-    let description:String
+    var componentTypeId:String
+    var componentTypeName:String
+    var description:String
     
     init(componentTypeId:String, componentTypeName:String, description:String) {
         self.componentTypeId = componentTypeId

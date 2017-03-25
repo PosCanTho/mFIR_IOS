@@ -9,9 +9,9 @@
 import Foundation
 
 class FacilityType {
-    let facilityTypeId:String
-    let facilityTypeName:String
-    let desctiption:String
+    var facilityTypeId:String
+    var facilityTypeName:String
+    var desctiption:String
     
     init(facilityTypeId:String, facilityTypeName:String, desctiption:String) {
         self.facilityTypeId = facilityTypeId

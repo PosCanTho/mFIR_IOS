@@ -10,14 +10,14 @@ import Foundation
 
 class Account {
     
-    let userId:String
-    let userName:String
-    let studentIdNumber:String
-    let instructorIdNumber:String
-    let currentLastName:String
-    let currentMiddleName:String
-    let currentFirstName:String
-    let roleType:String
+    var userId:String
+    var userName:String
+    var studentIdNumber:String
+    var instructorIdNumber:String
+    var currentLastName:String
+    var currentMiddleName:String
+    var currentFirstName:String
+    var rovarype:String
     
     init(
         userId:String,
@@ -27,12 +27,12 @@ class Account {
         currentLastName:String,
         currentMiddleName:String,
         currentFirstName:String,
-        roleType:String) {
+        rovarype:String) {
         
         self.instructorIdNumber = instructorIdNumber
         self.userName = userName
         self.currentLastName = currentLastName
-        self.roleType = roleType
+        self.rovarype = rovarype
         self.studentIdNumber = studentIdNumber
         self.currentFirstName = currentFirstName
         self.userId = userId

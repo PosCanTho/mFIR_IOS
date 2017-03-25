@@ -9,23 +9,23 @@
 import Foundation
 
 class Student {
-    let studentIdNumber:String
-    let currentLastName:String
-    let currentFirstName:String
-    let currentMiddleName:String
-    let birthDate:String
-    let peopleIdNumber:String
-    let currentGender:String
-    let currentPhoneNumber:String
-    let currentMobileNumber:String
-    let academicIntakeSessionName:String
-    let academicProgramName:String
-    let curriculumName:String
-    let curriculumCode:String
-    let programShort:String
-    let academicProgramCode:String
-    let academicLevelName:String
-    let studentLearningStatusTypeName:String
+    var studentIdNumber:String
+    var currentLastName:String
+    var currentFirstName:String
+    var currentMiddleName:String
+    var birthDate:String
+    var peopleIdNumber:String
+    var currentGender:String
+    var currentPhoneNumber:String
+    var currentMobileNumber:String
+    var academicIntakeSessionName:String
+    var academicProgramName:String
+    var curriculumName:String
+    var curriculumCode:String
+    var programShort:String
+    var academicProgramCode:String
+    var academicLevelName:String
+    var studentLearningStatusTypeName:String
     
     init(
         studentIdNumber:String,

@@ -10,11 +10,11 @@ import Foundation
 
 class Facility {
     
-    let id:String
-    let name:String
-    let typeName:String
-    let usageStatus:String
-    let rootId:String
+    var id:String
+    var name:String
+    var typeName:String
+    var usageStatus:String
+    var rootId:String
     
     init(id: String, name: String, typeName: String, usageStatus: String, rootId: String) {
         self.id = id

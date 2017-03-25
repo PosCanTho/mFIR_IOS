@@ -10,13 +10,13 @@ import Foundation
 
 class Relationship{
     
-    let facilityTypeId:String
-    let facilityTypeName:String
-    let facilityComponentTypeId:String
-    let facilityComponentTypeName:String
-    let fromDate:String
-    let thruDate:String
-    let note:String
+    var facilityTypeId:String
+    var facilityTypeName:String
+    var facilityComponentTypeId:String
+    var facilityComponentTypeName:String
+    var fromDate:String
+    var thruDate:String
+    var note:String
     
     init(
         facilityTypeId:String,
