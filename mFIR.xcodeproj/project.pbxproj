@@ -13,6 +13,7 @@
 		F59022BD1E84BB6F00728B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59022BC1E84BB6F00728B9E /* Assets.xcassets */; };
 		F59022C01E84BB6F00728B9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59022BE1E84BB6F00728B9E /* LaunchScreen.storyboard */; };
 		F59022D21E84FDE000728B9E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59022D11E84FDE000728B9E /* LoginViewController.swift */; };
+		F59022D51E850C1000728B9E /* Uitls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59022D41E850C1000728B9E /* Uitls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F59022BF1E84BB6F00728B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F59022C11E84BB6F00728B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F59022D11E84FDE000728B9E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F59022D41E850C1000728B9E /* Uitls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uitls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		F59022B41E84BB6F00728B9E /* mFIR */ = {
 			isa = PBXGroup;
 			children = (
+				F59022D31E85093C00728B9E /* untils */,
 				F59022CB1E84BCB000728B9E /* callbacks */,
 				F59022CA1E84BC9F00728B9E /* connection */,
 				F59022C91E84BC8200728B9E /* coredata */,
@@ -105,6 +108,14 @@
 			children = (
 			);
 			name = callbacks;
+			sourceTree = "<group>";
+		};
+		F59022D31E85093C00728B9E /* untils */ = {
+			isa = PBXGroup;
+			children = (
+				F59022D41E850C1000728B9E /* Uitls.swift */,
+			);
+			name = untils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				F59022D21E84FDE000728B9E /* LoginViewController.swift in Sources */,
 				F59022B81E84BB6F00728B9E /* ViewController.swift in Sources */,
 				F59022B61E84BB6F00728B9E /* AppDelegate.swift in Sources */,
+				F59022D51E850C1000728B9E /* Uitls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

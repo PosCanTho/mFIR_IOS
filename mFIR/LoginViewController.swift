@@ -20,8 +20,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         isRememberChecked = false;
+        lbUsername.isHidden = true;
+        lbPassword.isHidden = true;
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,6 +44,29 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signin(_ sender: Any) {
+        let username = tfUsername.text!
+        let password = tfPassword.text!
+        
+        if(username.isEmpty){
+            lbUsername.isHidden = false
+            lbPassword.isHidden = true
+        }else if(password.isEmpty){
+            lbPassword.isHidden = false
+            lbUsername.isHidden = true
+        }else{
+            lbUsername.isHidden = true
+            lbPassword.isHidden = true
+            
+            showAlertComfirmOK(title: "mFIR", msg: "Do you want log out?", callback: {(processId: Int) -> Void in
+                if(processId == 0){
+                    print("Cancel")
+                }else if(processId == 1)
+                {
+                    print("OK")
+                }
+            
+            })
+        }
         
     }
     
