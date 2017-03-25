@@ -10,17 +10,17 @@ import Foundation
 
 class Facility {
     
-    var id:String
-    var name:String
-    var typeName:String
-    var usageStatus:String
-    var rootId:String
+    var facilityId:String
+    var facilityName:String
+    var facilityTypeName:String
+    var facilityUsageStatus:String
+    var facilityRootId:String
     
-    init(id: String, name: String, typeName: String, usageStatus: String, rootId: String) {
-        self.id = id
-        self.name = name
-        self.typeName = typeName
-        self.usageStatus = usageStatus
-        self.rootId = rootId
+    init(facilityId: String, facilityName: String, facilityTypeName: String, facilityUsageStatus: String, facilityRootId: String) {
+        self.facilityId = facilityId
+        self.facilityName = facilityName
+        self.facilityTypeName = facilityTypeName
+        self.facilityUsageStatus = facilityUsageStatus
+        self.facilityRootId = facilityRootId
     }
 }

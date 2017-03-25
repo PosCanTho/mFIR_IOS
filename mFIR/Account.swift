@@ -17,7 +17,7 @@ class Account {
     var currentLastName:String
     var currentMiddleName:String
     var currentFirstName:String
-    var rovarype:String
+    var roleType:String
     
     init(
         userId:String,
@@ -27,12 +27,12 @@ class Account {
         currentLastName:String,
         currentMiddleName:String,
         currentFirstName:String,
-        rovarype:String) {
+        roleType:String) {
         
         self.instructorIdNumber = instructorIdNumber
         self.userName = userName
         self.currentLastName = currentLastName
-        self.rovarype = rovarype
+        self.roleType = roleType
         self.studentIdNumber = studentIdNumber
         self.currentFirstName = currentFirstName
         self.userId = userId
