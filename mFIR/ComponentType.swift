@@ -18,4 +18,5 @@ class ComponentType {
         self.componentTypeName = componentTypeName
         self.description = description
     }
+    
 }

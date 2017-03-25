@@ -16,9 +16,15 @@
 		04FD644D1E84F47700FA67EF /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD644C1E84F47700FA67EF /* Issue.swift */; };
 		04FD644F1E84F49200FA67EF /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD644E1E84F49200FA67EF /* Relationship.swift */; };
 		04FD64511E84F4B200FA67EF /* FirServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD64501E84F4B200FA67EF /* FirServices.swift */; };
+		0E10EAC41E84FF3F00CFD8B5 /* mFIR.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 0E10EAC31E84FF3F00CFD8B5 /* mFIR.xcdatamodel */; };
+		0E10EAC71E84FFE000CFD8B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E10EAC51E84FFE000CFD8B5 /* Main.storyboard */; };
+		0E10EACF1E8516EB00CFD8B5 /* FacilityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E10EACE1E8516EB00CFD8B5 /* FacilityData.swift */; };
+		0E10EAD11E85170200CFD8B5 /* FacilityTypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E10EAD01E85170200CFD8B5 /* FacilityTypeData.swift */; };
+		0E10EAD51E85245600CFD8B5 /* FacilityComponentTypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E10EAD41E85245600CFD8B5 /* FacilityComponentTypeData.swift */; };
+		0E10EAD71E85252700CFD8B5 /* FacilityRelationshipData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E10EAD61E85252700CFD8B5 /* FacilityRelationshipData.swift */; };
+		0E10EAD91E8527AD00CFD8B5 /* FacilityIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E10EAD81E8527AD00CFD8B5 /* FacilityIssue.swift */; };
 		F59022B61E84BB6F00728B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59022B51E84BB6F00728B9E /* AppDelegate.swift */; };
 		F59022B81E84BB6F00728B9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59022B71E84BB6F00728B9E /* ViewController.swift */; };
-		F59022BB1E84BB6F00728B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59022B91E84BB6F00728B9E /* Main.storyboard */; };
 		F59022BD1E84BB6F00728B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59022BC1E84BB6F00728B9E /* Assets.xcassets */; };
 		F59022C01E84BB6F00728B9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59022BE1E84BB6F00728B9E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -33,10 +39,16 @@
 		04FD644C1E84F47700FA67EF /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		04FD644E1E84F49200FA67EF /* Relationship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
 		04FD64501E84F4B200FA67EF /* FirServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirServices.swift; sourceTree = "<group>"; };
+		0E10EAC31E84FF3F00CFD8B5 /* mFIR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = mFIR.xcdatamodel; path = ../../FIR_23_03/FIR_23_03/FIR_23_03.xcdatamodeld/mFIR.xcdatamodel; sourceTree = "<group>"; };
+		0E10EAC61E84FFE000CFD8B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../FIR_23_03/FIR_23_03/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E10EACE1E8516EB00CFD8B5 /* FacilityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityData.swift; sourceTree = "<group>"; };
+		0E10EAD01E85170200CFD8B5 /* FacilityTypeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityTypeData.swift; sourceTree = "<group>"; };
+		0E10EAD41E85245600CFD8B5 /* FacilityComponentTypeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityComponentTypeData.swift; sourceTree = "<group>"; };
+		0E10EAD61E85252700CFD8B5 /* FacilityRelationshipData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityRelationshipData.swift; sourceTree = "<group>"; };
+		0E10EAD81E8527AD00CFD8B5 /* FacilityIssue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityIssue.swift; sourceTree = "<group>"; };
 		F59022B21E84BB6F00728B9E /* mFIR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mFIR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59022B51E84BB6F00728B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F59022B71E84BB6F00728B9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F59022BA1E84BB6F00728B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F59022BC1E84BB6F00728B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F59022BF1E84BB6F00728B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F59022C11E84BB6F00728B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,8 +99,9 @@
 				F59022C81E84BC4800728B9E /* models */,
 				F59022C71E84BC3C00728B9E /* viewcontrollers */,
 				F59022B51E84BB6F00728B9E /* AppDelegate.swift */,
-				F59022B91E84BB6F00728B9E /* Main.storyboard */,
 				F59022BC1E84BB6F00728B9E /* Assets.xcassets */,
+				0E10EAC51E84FFE000CFD8B5 /* Main.storyboard */,
+				0E10EAC31E84FF3F00CFD8B5 /* mFIR.xcdatamodel */,
 				F59022BE1E84BB6F00728B9E /* LaunchScreen.storyboard */,
 				F59022C11E84BB6F00728B9E /* Info.plist */,
 			);
@@ -120,6 +133,11 @@
 		F59022C91E84BC8200728B9E /* coredata */ = {
 			isa = PBXGroup;
 			children = (
+				0E10EACE1E8516EB00CFD8B5 /* FacilityData.swift */,
+				0E10EAD01E85170200CFD8B5 /* FacilityTypeData.swift */,
+				0E10EAD41E85245600CFD8B5 /* FacilityComponentTypeData.swift */,
+				0E10EAD61E85252700CFD8B5 /* FacilityRelationshipData.swift */,
+				0E10EAD81E8527AD00CFD8B5 /* FacilityIssue.swift */,
 			);
 			name = coredata;
 			sourceTree = "<group>";
@@ -199,9 +217,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E10EAC71E84FFE000CFD8B5 /* Main.storyboard in Resources */,
 				F59022C01E84BB6F00728B9E /* LaunchScreen.storyboard in Resources */,
 				F59022BD1E84BB6F00728B9E /* Assets.xcassets in Resources */,
-				F59022BB1E84BB6F00728B9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,15 +230,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E10EAC41E84FF3F00CFD8B5 /* mFIR.xcdatamodel in Sources */,
+				0E10EAD91E8527AD00CFD8B5 /* FacilityIssue.swift in Sources */,
 				04FD64511E84F4B200FA67EF /* FirServices.swift in Sources */,
 				04FD644B1E84F45300FA67EF /* Instructor.swift in Sources */,
 				04FD64471E84F41100FA67EF /* Facility.swift in Sources */,
 				F59022B81E84BB6F00728B9E /* ViewController.swift in Sources */,
 				04FD64431E84F3C000FA67EF /* Account.swift in Sources */,
 				04FD64451E84F3EC00FA67EF /* ComponentType.swift in Sources */,
+				0E10EACF1E8516EB00CFD8B5 /* FacilityData.swift in Sources */,
+				0E10EAD11E85170200CFD8B5 /* FacilityTypeData.swift in Sources */,
 				04FD644F1E84F49200FA67EF /* Relationship.swift in Sources */,
+				0E10EAD71E85252700CFD8B5 /* FacilityRelationshipData.swift in Sources */,
 				F59022B61E84BB6F00728B9E /* AppDelegate.swift in Sources */,
 				04FD64411E84F36E00FA67EF /* Constants.swift in Sources */,
+				0E10EAD51E85245600CFD8B5 /* FacilityComponentTypeData.swift in Sources */,
 				04FD64491E84F43100FA67EF /* FacilityType.swift in Sources */,
 				04FD644D1E84F47700FA67EF /* Issue.swift in Sources */,
 			);
@@ -229,10 +253,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F59022B91E84BB6F00728B9E /* Main.storyboard */ = {
+		0E10EAC51E84FFE000CFD8B5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F59022BA1E84BB6F00728B9E /* Base */,
+				0E10EAC61E84FFE000CFD8B5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

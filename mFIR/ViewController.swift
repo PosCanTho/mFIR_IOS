@@ -7,18 +7,65 @@
 //
 
 import UIKit
+import CoreData
 
-class ViewController: UIViewController {
 
+
+
+
+class ViewController: UIViewController, UITableViewDelegate ,UITableViewDataSource{
+    var results : NSArray?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         test()
+        let appDel: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context : NSManagedObjectContext = appDel.managedObjectContext
+        // INSERT
+        let facilityTypeData = NSEntityDescription.insertNewObject(forEntityName: Databases.TABLE_FACILITY_TYPE, into:  context)
+        facilityTypeData.setValue("234", forKey: Databases.FACILITY_TYPE_ID)
+        facilityTypeData.setValue("phong thuc hanh", forKey: Databases.FACILITY_TYPE_NAME)
+        facilityTypeData.setValue("pham thi nguyet hue", forKey: Databases.DESCRIPTION)
+
+        do {
+            try context.save()
+            print("thanh cong")
+        }
+        catch {
+            print("Error!")
+        }
+        
+        let request = NSFetchRequest<NSFetchRequestResult> (entityName: Databases.TABLE_FACILITY_TYPE)
+        request.returnsObjectsAsFaults = false
+        results = try! context.fetch(request) as NSArray?
+        
+        if (results!.count>0){
+            for res in results! {
+                print(res)
+            }
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        let aux = results![(indexPath as NSIndexPath).row] as! NSManagedObject
+        cell.textLabel?.text = aux.value(forKey: Databases.FACILITY_TYPE_ID) as? String
+        cell.textLabel!.text = aux.value(forKey: Databases.FACILITY_TYPE_NAME) as? String
+        cell.textLabel!.text = aux.value(forKey: Databases.DESCRIPTION) as? String
+        return cell
+        
+    }
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return results!.count
+        
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int)-> String?  {
+        return "TuxMania"
     }
 
     // >>>>>> vinh test <<<< ===============
