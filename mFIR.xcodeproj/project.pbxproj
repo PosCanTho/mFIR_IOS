@@ -17,6 +17,8 @@
 		0432BF651E87805D002FF000 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432BF641E87805D002FF000 /* Student.swift */; };
 		0432BF671E878087002FF000 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432BF661E878087002FF000 /* User.swift */; };
 		0432BF691E878099002FF000 /* UserReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432BF681E878099002FF000 /* UserReferences.swift */; };
+		04BEB7F31E878437007BA84C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEB7F21E878437007BA84C /* Constants.swift */; };
+		04BEB7F51E8784DB007BA84C /* FirServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEB7F41E8784DB007BA84C /* FirServices.swift */; };
 		F59022B61E84BB6F00728B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59022B51E84BB6F00728B9E /* AppDelegate.swift */; };
 		F59022B81E84BB6F00728B9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59022B71E84BB6F00728B9E /* ViewController.swift */; };
 		F59022BB1E84BB6F00728B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59022B91E84BB6F00728B9E /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 		0432BF641E87805D002FF000 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		0432BF661E878087002FF000 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0432BF681E878099002FF000 /* UserReferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserReferences.swift; sourceTree = "<group>"; };
+		04BEB7F21E878437007BA84C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04BEB7F41E8784DB007BA84C /* FirServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirServices.swift; sourceTree = "<group>"; };
 		F59022B21E84BB6F00728B9E /* mFIR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mFIR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59022B51E84BB6F00728B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F59022B71E84BB6F00728B9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04BEB7F11E878421007BA84C /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				04BEB7F21E878437007BA84C /* Constants.swift */,
+			);
+			name = constants;
+			sourceTree = "<group>";
+		};
 		F59022A91E84BB6F00728B9E = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +86,7 @@
 		F59022B41E84BB6F00728B9E /* mFIR */ = {
 			isa = PBXGroup;
 			children = (
+				04BEB7F11E878421007BA84C /* constants */,
 				F59022CB1E84BCB000728B9E /* callbacks */,
 				F59022CA1E84BC9F00728B9E /* connection */,
 				F59022C91E84BC8200728B9E /* coredata */,
@@ -123,6 +136,7 @@
 		F59022CA1E84BC9F00728B9E /* connection */ = {
 			isa = PBXGroup;
 			children = (
+				04BEB7F41E8784DB007BA84C /* FirServices.swift */,
 			);
 			name = connection;
 			sourceTree = "<group>";
@@ -214,9 +228,11 @@
 				0432BF651E87805D002FF000 /* Student.swift in Sources */,
 				0432BF5F1E878028002FF000 /* Issue.swift in Sources */,
 				F59022B81E84BB6F00728B9E /* ViewController.swift in Sources */,
+				04BEB7F31E878437007BA84C /* Constants.swift in Sources */,
 				0432BF5B1E877FF5002FF000 /* FacilityType.swift in Sources */,
 				0432BF591E877FC8002FF000 /* Facility.swift in Sources */,
 				0432BF5D1E878011002FF000 /* Instructor.swift in Sources */,
+				04BEB7F51E8784DB007BA84C /* FirServices.swift in Sources */,
 				F59022B61E84BB6F00728B9E /* AppDelegate.swift in Sources */,
 				0432BF671E878087002FF000 /* User.swift in Sources */,
 			);
