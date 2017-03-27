@@ -17,6 +17,10 @@
 		0432BF651E87805D002FF000 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432BF641E87805D002FF000 /* Student.swift */; };
 		0432BF671E878087002FF000 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432BF661E878087002FF000 /* User.swift */; };
 		0432BF691E878099002FF000 /* UserReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432BF681E878099002FF000 /* UserReferences.swift */; };
+		A44BFFBB1E88A30500528A0F /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BFFB41E88A30500528A0F /* BEMAnimationManager.m */; };
+		A44BFFBC1E88A30500528A0F /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BFFB61E88A30500528A0F /* BEMCheckBox.m */; };
+		A44BFFBD1E88A30500528A0F /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BFFB81E88A30500528A0F /* BEMCheckBoxGroup.m */; };
+		A44BFFBE1E88A30500528A0F /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BFFBA1E88A30500528A0F /* BEMPathManager.m */; };
 		F59022B61E84BB6F00728B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59022B51E84BB6F00728B9E /* AppDelegate.swift */; };
 		F59022B81E84BB6F00728B9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59022B71E84BB6F00728B9E /* ViewController.swift */; };
 		F59022BB1E84BB6F00728B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59022B91E84BB6F00728B9E /* Main.storyboard */; };
@@ -35,6 +39,15 @@
 		0432BF641E87805D002FF000 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		0432BF661E878087002FF000 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0432BF681E878099002FF000 /* UserReferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserReferences.swift; sourceTree = "<group>"; };
+		A44BFFB31E88A30500528A0F /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimationManager.h; sourceTree = "<group>"; };
+		A44BFFB41E88A30500528A0F /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimationManager.m; sourceTree = "<group>"; };
+		A44BFFB51E88A30500528A0F /* BEMCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBox.h; sourceTree = "<group>"; };
+		A44BFFB61E88A30500528A0F /* BEMCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBox.m; sourceTree = "<group>"; };
+		A44BFFB71E88A30500528A0F /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
+		A44BFFB81E88A30500528A0F /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		A44BFFB91E88A30500528A0F /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
+		A44BFFBA1E88A30500528A0F /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
+		A44BFFBF1E88A32000528A0F /* Checkbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Checkbox.h; sourceTree = "<group>"; };
 		F59022B21E84BB6F00728B9E /* mFIR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mFIR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59022B51E84BB6F00728B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F59022B71E84BB6F00728B9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +68,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A44BFFB21E88A30500528A0F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A44BFFB31E88A30500528A0F /* BEMAnimationManager.h */,
+				A44BFFB41E88A30500528A0F /* BEMAnimationManager.m */,
+				A44BFFB51E88A30500528A0F /* BEMCheckBox.h */,
+				A44BFFB61E88A30500528A0F /* BEMCheckBox.m */,
+				A44BFFB71E88A30500528A0F /* BEMCheckBoxGroup.h */,
+				A44BFFB81E88A30500528A0F /* BEMCheckBoxGroup.m */,
+				A44BFFB91E88A30500528A0F /* BEMPathManager.h */,
+				A44BFFBA1E88A30500528A0F /* BEMPathManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		F59022A91E84BB6F00728B9E = {
 			isa = PBXGroup;
 			children = (
@@ -74,12 +102,14 @@
 		F59022B41E84BB6F00728B9E /* mFIR */ = {
 			isa = PBXGroup;
 			children = (
+				A44BFFB21E88A30500528A0F /* Classes */,
 				F59022CB1E84BCB000728B9E /* callbacks */,
 				F59022CA1E84BC9F00728B9E /* connection */,
 				F59022C91E84BC8200728B9E /* coredata */,
 				F59022C81E84BC4800728B9E /* models */,
 				F59022C71E84BC3C00728B9E /* viewcontrollers */,
 				F59022B51E84BB6F00728B9E /* AppDelegate.swift */,
+				A44BFFBF1E88A32000528A0F /* Checkbox.h */,
 				F59022B91E84BB6F00728B9E /* Main.storyboard */,
 				F59022BC1E84BB6F00728B9E /* Assets.xcassets */,
 				F59022BE1E84BB6F00728B9E /* LaunchScreen.storyboard */,
@@ -208,16 +238,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0432BF691E878099002FF000 /* UserReferences.swift in Sources */,
+				A44BFFBC1E88A30500528A0F /* BEMCheckBox.m in Sources */,
 				0432BF571E877FA5002FF000 /* ComponentType.swift in Sources */,
+				A44BFFBD1E88A30500528A0F /* BEMCheckBoxGroup.m in Sources */,
 				0432BF631E87804A002FF000 /* Relationship.swift in Sources */,
 				0432BF611E87803B002FF000 /* IssueStatus.swift in Sources */,
 				0432BF651E87805D002FF000 /* Student.swift in Sources */,
+				A44BFFBE1E88A30500528A0F /* BEMPathManager.m in Sources */,
 				0432BF5F1E878028002FF000 /* Issue.swift in Sources */,
 				F59022B81E84BB6F00728B9E /* ViewController.swift in Sources */,
 				0432BF5B1E877FF5002FF000 /* FacilityType.swift in Sources */,
 				0432BF591E877FC8002FF000 /* Facility.swift in Sources */,
 				0432BF5D1E878011002FF000 /* Instructor.swift in Sources */,
 				F59022B61E84BB6F00728B9E /* AppDelegate.swift in Sources */,
+				A44BFFBB1E88A30500528A0F /* BEMAnimationManager.m in Sources */,
 				0432BF671E878087002FF000 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +378,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = poscantho.mFIR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Checkbox.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -357,6 +392,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = poscantho.mFIR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Checkbox.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
