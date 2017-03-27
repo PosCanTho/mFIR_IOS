@@ -57,6 +57,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             lbUsername.isHidden = true
             lbPassword.isHidden = true
             
+            
             showAlertComfirmOK(title: "mFIR", msg: "Do you want log out?", callback: {(processId: Int) -> Void in
                 if(processId == 0){
                     print("Cancel")
