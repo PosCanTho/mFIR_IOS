@@ -8,38 +8,36 @@
 
 import Foundation
 
+
 class FirServices{
-    
-    private static var USER:String {
-        
-        let user = UserDefaults.standard
-        
-        guard let username = user.string(forKey: UserReferences.USERNAME), let password = user.string(forKey: UserReferences.PASSWORD) else{
-            return ""
-        }
-        
-        return "username=" + username + "&password=" + password + "&"
-    }
-    
     
     // ============================
     private static func dataTask(
         url: String,
-        post: String,
+        post: PostParameter,
         callback: @escaping (_ json: Dictionary<String, Any>, _ error: String?) -> Void) {
         
         let TAG = "func -> dataTask: "
         
-        guard post.lowercased().range(of: "username") != nil && post.lowercased().range(of: "password") != nil else{
-            print("-> User is nil <-")
-            return
+        
+        if(!post.isLogin()){
+            let user = UserDefaults.standard
+            guard let username = user.string(forKey: UserReferences.USERNAME), let password = user.string(forKey: UserReferences.PASSWORD) else{
+                print("FirServices: -> User is nil !!!")
+                return
+            }
+            
+            post.add(key: "username", value: username)
+            post.add(key: "password", value: password)
         }
+        
+        let postString:String = post.getString()
         
         let urlRequest = URL(string: url)!
         var request = URLRequest(url: urlRequest)
         
         request.httpMethod = "POST"
-        request.httpBody = post.data(using: .utf8)
+        request.httpBody = postString.data(using: .utf8)
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             
@@ -69,24 +67,31 @@ class FirServices{
         }
         task.resume()
     }
-    // ============================
+
     
     
-    // ============================
+
     static func login(username: String, password: String, imei: String, callback: @escaping (_ data: Any) -> Void){
         
         let TAG = "func -> login: "
         
-        let postString = "username=" + username + "&password=" + password + "&imei=" + imei
+        let post = PostParameter()
+        post.add(key: "username", value: username)
+        post.add(key: "password", value: password)
+        post.add(key: "imei", value: "")
         
-        FirServices.dataTask(url: Constants.URL.API_LOGIN, post: postString){
+        FirServices.dataTask(url: Constants.URL.API_LOGIN, post: post){
             (json, error) in
             
             guard let table = json["Table"] as? [[String: Any]], error == nil else{
                 print(TAG + error!)
+                let userReference = UserDefaults.standard
+                userReference.removeObject(forKey: UserReferences.USERNAME)
+                userReference.removeObject(forKey: UserReferences.PASSWORD)
                 callback(false)
                 return
             }
+                        
             guard let instructorIdNumber = table[0]["INSTRUCTOR_ID_NUMBER"] as? String,
                 let userName = table[0]["UserName"] as? String,
                 let currentLastName = table[0]["CURRENT_LAST_NAME"] as? String,
@@ -121,11 +126,12 @@ class FirServices{
         
         let TAG = "func -> facility: "
         
-        let postString = FirServices.USER + "facility_id=" + facilityId
+        let post = PostParameter()
+        post.add(key: "facility_id", value: facilityId)
         
         var listFacility = [Facility]()
         
-        FirServices.dataTask(url: Constants.URL.API_GET_LIST_FACILITY, post: postString){
+        FirServices.dataTask(url: Constants.URL.API_GET_LIST_FACILITY, post: post){
             (json, error) in
             
             guard let table = json["Table"] as? [[String: Any]], error == nil else{
@@ -159,11 +165,14 @@ class FirServices{
         
         let TAG = "func -> facilityIssue: "
         
-        let postString = FirServices.USER + "facility_issue_id=" + facilityIssueId + "&from_date=" +  fromDate + "&thru_date=" + thruDate
+        let post = PostParameter()
+        post.add(key: "facility_issue_id", value: facilityIssueId)
+        post.add(key: "from_date", value: fromDate)
+        post.add(key: "thru_date", value: thruDate)
         
         var listIssue = [Issue]()
         
-        FirServices.dataTask(url: Constants.URL.API_GET_LIST_FACILITY_ISSUE, post: postString){
+        FirServices.dataTask(url: Constants.URL.API_GET_LIST_FACILITY_ISSUE, post: post){
             (json, error) in
             guard let table = json["Table"] as? [[String: Any]], error == nil else{
                 print(TAG + error!)
@@ -295,11 +304,12 @@ class FirServices{
         
         let TAG = "func -> componentType: "
         
-        let postString = FirServices.USER + "facility_component_type_id=" + facilityComponentTypeId
+        let post = PostParameter()
+        post.add(key: "facility_component_type_id", value: facilityComponentTypeId)
         
         var listComponentType = [ComponentType]()
         
-        FirServices.dataTask(url: Constants.URL.API_GET_LIST_FACILITY_COMPONENT_TYPE, post: postString){
+        FirServices.dataTask(url: Constants.URL.API_GET_LIST_FACILITY_COMPONENT_TYPE, post: post){
             (json, error) in
             
             guard let table = json["Table"] as? [[String: Any]], error == nil else{
@@ -331,11 +341,13 @@ class FirServices{
         
         let TAG = "func -> relationship: "
         
-        let postString = FirServices.USER + "facility_type_id=" + facilityTypeId + "&facility_component_type_id=" + facilityComponentTypeId
+        let post = PostParameter()
+        post.add(key: "facility_type_id", value: facilityTypeId)
+        post.add(key: "facility_component_type_id", value: facilityComponentTypeId)
         
         var listRelationship = [Relationship]()
         
-        FirServices.dataTask(url: Constants.URL.API_GET_RELATIONSHIP, post: postString){
+        FirServices.dataTask(url: Constants.URL.API_GET_RELATIONSHIP, post: post){
             (json, error) in
             
             guard let table = json["Table"] as? [[String: Any]], error == nil else{
@@ -378,11 +390,12 @@ class FirServices{
         
         let TAG = "func -> facilityType: "
         
-        let postString = FirServices.USER + "facility_type_id=" + facilityTypeId
+        let post = PostParameter()
+        post.add(key: "facility_type_id", value: facilityTypeId)
         
         var listFacilityType = [FacilityType]()
         
-        FirServices.dataTask(url: Constants.URL.API_GET_LIST_FACILITY_TYPE, post: postString){
+        FirServices.dataTask(url: Constants.URL.API_GET_LIST_FACILITY_TYPE, post: post){
             (json, error) in
             
             guard let table = json["Table"] as? [[String: Any]], error == nil else{
@@ -414,11 +427,12 @@ class FirServices{
         
         let TAG = "func -> instructor: "
         
-        let postString = FirServices.USER + "instructor_id_number=" + instructorIdNumber
+        let post = PostParameter()
+        post.add(key: "instructor_id_number", value: instructorIdNumber)
         
         var listInstructor = [Instructor]()
         
-        FirServices.dataTask(url: Constants.URL.API_GET_LIST_INSTRUCTOR, post: postString){
+        FirServices.dataTask(url: Constants.URL.API_GET_LIST_INSTRUCTOR, post: post){
             (json, error) in
             
             guard let table = json["Table"] as? [[String: Any]], error == nil else{
@@ -542,11 +556,12 @@ class FirServices{
         
         let TAG = "func -> student: "
         
-        let postString = FirServices.USER + "student_id_number=" + studentIdNumber
+        let post = PostParameter()
+        post.add(key: "student_id_number", value: studentIdNumber)
         
         var listStudent = [Student]()
         
-        FirServices.dataTask(url: Constants.URL.API_GET_LIST_STUDENT, post: postString){
+        FirServices.dataTask(url: Constants.URL.API_GET_LIST_STUDENT, post: post){
             (json, error) in
             
             guard let table = json["Table"] as? [[String: Any]], error == nil else{
@@ -612,17 +627,19 @@ class FirServices{
         
         let TAG = "func -> issueStatus: "
         
-        let postString = FirServices.USER
+//        let post = ""
+        let post = PostParameter()
         
         var listIssueStatus = [IssueStatus]()
         
-        FirServices.dataTask(url: Constants.URL.API_GET_ISSUE_STATUS, post: postString){
+        FirServices.dataTask(url: Constants.URL.API_GET_ISSUE_STATUS, post: post){
             (json, error) in
             
             guard let table = json["Table"] as? [[String: Any]], error == nil else{
                 print(TAG + error!)
                 return
             }
+            
             for element in table{
                 
                 guard let id = element["TYPE_NAME_ID"] as? String,
@@ -647,11 +664,12 @@ class FirServices{
         
         let TAG = "func -> issueByFacility: "
         
-        let postString = FirServices.USER + "facility_id=" + facilityId
+        let post = PostParameter()
+        post.add(key: "facility_id", value: facilityId)
         
         var listIssue = [Issue]()
         
-        FirServices.dataTask(url: Constants.URL.API_GET_ISSUE_BY_FACILITY, post: postString){
+        FirServices.dataTask(url: Constants.URL.API_GET_ISSUE_BY_FACILITY, post: post){
             (json, error) in
             
             guard let table = json["Table"] as? [[String: Any]], error == nil else{
@@ -784,9 +802,61 @@ class FirServices{
         
         let TAG = "func -> updateIssue: "
         
-        let postString = FirServices.USER
+        let post = PostParameter()
+        post.add(key: "FACILITY_ISSUE_ID", value: issue.facilityIssueId!)
+        post.add(key: "FACILITY_ISSUE_CASE_NUMBER", value: issue.facilityIssueCaseNumber!)
+        post.add(key: "SAME_FACILITY_ISSUE_ID", value: issue.sameFacilityIssueId!)
+        post.add(key: "SAME_FACILITY_ISSUE_CASE_NUMBER", value: issue.sameFacilityIssueCaseNumber!)
+        post.add(key: "FACILITY_ISSUE_REPORT_DATETIME", value: issue.facilityIssueReportDatetime!)
+        post.add(key: "FACILITY_ISSUE_STATUS", value: issue.facilityIssueStatus!)
+        post.add(key: "INSTRUCTOR_ID_NUMBER", value: issue.instructorIdNumber!)
+        post.add(key: "STUDENT_ID_NUMBER", value: issue.studentIdNumber!)
+        post.add(key: "FACILITY_ID", value: issue.facilityId!)
+        post.add(key: "FACILITY_NAME", value: issue.facilityName!)
+        post.add(key: "FACILITY_TYPE_NAME", value: issue.facilityTypeName!)
+        post.add(key: "FACILITY_COMPONENT_TYPE_ID_1", value: issue.facilityComponentTypeId1!)
+        post.add(key: "FACILITY_COMPONENT_TYPE_NAME_1", value: issue.facilityComponentTypeName1!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_REPORT_1", value: issue.facilityComponentIssueReport1!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_STATUS_1", value: issue.facilityComponentIssueStatus1!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_PICTURE_1", value: issue.facilityComponentIssue_picture1!)
+        post.add(key: "FACILITY_ISSUE_RESOLVER_ID_NUMBER_1", value: issue.facilityIssueResolverIdNumber1!)
+        post.add(key: "FACILITY_ISSUE_RESOLVED_DATETIME_1", value: issue.facilityIssueResolvedDatetime1!)
+        post.add(key: "FACILITY_ISSUE_RESOLVERS_NOTE_1", value: issue.facilityIssueResolversNote1!)
+        post.add(key: "FACILITY_COMPONENT_TYPE_ID_2", value: issue.facilityComponentTypeId2!)
+        post.add(key: "FACILITY_COMPONENT_TYPE_NAME_2", value: issue.facilityComponentTypeName2!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_REPORT_2", value: issue.facilityComponentIssueReport2!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_STATUS_2", value: issue.facilityComponentIssueStatus2!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_PICTURE_2", value: issue.facilityComponentIssue_picture2!)
+        post.add(key: "FACILITY_ISSUE_RESOLVER_ID_NUMBER_2", value: issue.facilityIssueResolverIdNumber2!)
+        post.add(key: "FACILITY_ISSUE_RESOLVED_DATETIME_2", value: issue.facilityIssueResolvedDatetime2!)
+        post.add(key: "FACILITY_ISSUE_RESOLVERS_NOTE_2", value: issue.facilityIssueResolversNote2!)
+        post.add(key: "FACILITY_COMPONENT_TYPE_ID_3", value: issue.facilityComponentTypeId3!)
+        post.add(key: "FACILITY_COMPONENT_TYPE_NAME_3", value: issue.facilityComponentTypeName3!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_REPORT_3", value: issue.facilityComponentIssueReport3!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_STATUS_3", value: issue.facilityComponentIssueStatus3!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_PICTURE_3", value: issue.facilityComponentIssue_picture3!)
+        post.add(key: "FACILITY_ISSUE_RESOLVER_ID_NUMBER_3", value: issue.facilityIssueResolverIdNumber3!)
+        post.add(key: "FACILITY_ISSUE_RESOLVED_DATETIME_3", value: issue.facilityIssueResolvedDatetime3!)
+        post.add(key: "FACILITY_ISSUE_RESOLVERS_NOTE_3", value: issue.facilityIssueResolversNote3!)
+        post.add(key: "FACILITY_COMPONENT_TYPE_ID_4", value: issue.facilityComponentTypeId4!)
+        post.add(key: "FACILITY_COMPONENT_TYPE_NAME_4", value: issue.facilityComponentTypeName4!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_REPORT_4", value: issue.facilityComponentIssueReport4!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_STATUS_4", value: issue.facilityComponentIssueStatus4!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_PICTURE_4", value: issue.facilityComponentIssue_picture4!)
+        post.add(key: "FACILITY_ISSUE_RESOLVER_ID_NUMBER_4", value: issue.facilityIssueResolverIdNumber4!)
+        post.add(key: "FACILITY_ISSUE_RESOLVED_DATETIME_4", value: issue.facilityIssueResolvedDatetime4!)
+        post.add(key: "FACILITY_ISSUE_RESOLVERS_NOTE_4", value: issue.facilityIssueResolversNote4!)
+        post.add(key: "FACILITY_COMPONENT_TYPE_ID_5", value: issue.facilityComponentTypeId5!)
+        post.add(key: "FACILITY_COMPONENT_TYPE_NAME_5", value: issue.facilityComponentTypeName5!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_REPORT_5", value: issue.facilityComponentIssueReport5!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_STATUS_5", value: issue.facilityComponentIssueStatus5!)
+        post.add(key: "FACILITY_COMPONENT_ISSUE_PICTURE_5", value: issue.facilityComponentIssue_picture5!)
+        post.add(key: "FACILITY_ISSUE_RESOLVER_ID_NUMBER_5", value: issue.facilityIssueResolverIdNumber5!)
+        post.add(key: "FACILITY_ISSUE_RESOLVED_DATETIME_5", value: issue.facilityIssueResolvedDatetime5!)
+        post.add(key: "FACILITY_ISSUE_RESOLVERS_NOTE_5", value: issue.facilityIssueResolversNote5!)
         
-        FirServices.dataTask(url: Constants.URL.API_UPDATE_FACILITY_ISSUE, post: postString){
+        
+        FirServices.dataTask(url: Constants.URL.API_UPDATE_FACILITY_ISSUE, post: post){
             (json, error) in
             
             guard let table = json["Table"] as? [[String: Any]], error == nil else{
@@ -797,7 +867,7 @@ class FirServices{
             
             print(table)
             
-            callback("TEST THU")
+            callback("Chua hoan thien")
         }
     }
     // ============================
