@@ -110,6 +110,17 @@
 		F59022C81E84BC4800728B9E /* models */ = {
 			isa = PBXGroup;
 			children = (
+				0432BF561E877FA5002FF000 /* ComponentType.swift */,
+				0432BF581E877FC8002FF000 /* Facility.swift */,
+				0432BF5A1E877FF5002FF000 /* FacilityType.swift */,
+				0432BF5C1E878011002FF000 /* Instructor.swift */,
+				0432BF5E1E878028002FF000 /* Issue.swift */,
+				0432BF601E87803B002FF000 /* IssueStatus.swift */,
+				0432BF621E87804A002FF000 /* Relationship.swift */,
+				0432BF641E87805D002FF000 /* Student.swift */,
+				0432BF661E878087002FF000 /* User.swift */,
+				0432BF681E878099002FF000 /* UserReferences.swift */,
+				04E809971E8892D500E5C7E0 /* PostParameter.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 		F59022CA1E84BC9F00728B9E /* connection */ = {
 			isa = PBXGroup;
 			children = (
+				04BEB7F41E8784DB007BA84C /* FirServices.swift */,
 			);
 			name = connection;
 			sourceTree = "<group>";
