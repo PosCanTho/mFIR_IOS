@@ -17,12 +17,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var checkbox: UIButton!
     
     var isRememberChecked:Bool!
+    let isLogin: Bool
     
     override func viewDidLoad() {
         super.viewDidLoad()
         isRememberChecked = false;
         lbUsername.isHidden = true;
         lbPassword.isHidden = true;
+        isLogin = UserDefaults.standard.bool(forKey: UserReferences.IS_LOGIN)
+        if isLogin {
+            print("Is login")
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,6 +63,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             lbPassword.isHidden = true
             
             
+            if isLogin {
+                print("Is login")
+            }else{
+                FirServices.login(username: "huynhducviet", password: "UUNpZzQxYXN5VWY4MHIrL0FNN3hIaEtOU0VvPQ==", imei: "") { (data) in
+                    guard let data = data as? User else{
+                        
+                        print("Login faile")
+                        return
+                    }
+                    print(data.userName)
+                    UserDefaults.standard.set(true, forKey: UserReferences.IS_LOGIN)
+                }
+            }
             showAlertComfirmOK(title: "mFIR", msg: "Do you want log out?", callback: {(processId: Int) -> Void in
                 if(processId == 0){
                     print("Cancel")
