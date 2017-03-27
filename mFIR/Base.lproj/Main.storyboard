@@ -23,12 +23,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0b-hU-dcN">
-                                <rect key="frame" x="207" y="204" width="38" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWW-jg-TxH">
+                                <rect key="frame" x="121" y="266" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="etu-WH-wRq" kind="modal" id="EwY-1n-a6h"/>
+                                    <segue destination="etu-WH-wRq" kind="modal" id="H6i-G3-Q5u"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -37,6 +37,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="13.6" y="43.628185907046479"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Ltn-wg-X7d">
@@ -64,12 +65,18 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="etu-WH-wRq" id="UmQ-Yc-bXj"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qea-9p-ida">
                                         <rect key="frame" x="30" y="85" width="278" height="45"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="etu-WH-wRq" id="wmy-v9-KEg"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4Y-iQ-mCe">
                                         <rect key="frame" x="30" y="187" width="278" height="45"/>
@@ -165,21 +172,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hIa-Hg-HZg">
+                                <rect key="frame" x="68" y="460" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="V5k-JK-Ftl" secondAttribute="trailing" id="6PI-Rn-Rr8"/>
                             <constraint firstItem="mSx-hZ-eM2" firstAttribute="centerX" secondItem="9KR-X3-YzB" secondAttribute="centerX" id="7I7-Ad-gvX"/>
                             <constraint firstItem="V5k-JK-Ftl" firstAttribute="leading" secondItem="9KR-X3-YzB" secondAttribute="leadingMargin" id="7yG-FK-56F"/>
+                            <constraint firstItem="D3m-Dy-OrT" firstAttribute="top" secondItem="ti2-3Z-Gey" secondAttribute="bottom" constant="10" id="97l-j6-ghK"/>
                             <constraint firstItem="pnG-QZ-veF" firstAttribute="leading" secondItem="9KR-X3-YzB" secondAttribute="leading" id="AYE-PY-knF"/>
-                            <constraint firstItem="Ny7-0u-NQv" firstAttribute="top" secondItem="pnG-QZ-veF" secondAttribute="bottom" constant="10" id="PXh-8A-nJV"/>
-                            <constraint firstItem="D3m-Dy-OrT" firstAttribute="top" secondItem="ti2-3Z-Gey" secondAttribute="bottom" constant="10" id="TxA-OW-38o"/>
                             <constraint firstItem="mSx-hZ-eM2" firstAttribute="width" secondItem="9KR-X3-YzB" secondAttribute="width" multiplier="9/10" id="V46-CG-VCN"/>
                             <constraint firstItem="D3m-Dy-OrT" firstAttribute="centerX" secondItem="9KR-X3-YzB" secondAttribute="centerX" id="Vm2-lD-aSE"/>
                             <constraint firstItem="mSx-hZ-eM2" firstAttribute="centerY" secondItem="9KR-X3-YzB" secondAttribute="centerY" id="ePl-6t-mwa"/>
                             <constraint firstItem="V5k-JK-Ftl" firstAttribute="top" secondItem="mSx-hZ-eM2" secondAttribute="bottom" id="h0H-uC-20R"/>
                             <constraint firstItem="D3m-Dy-OrT" firstAttribute="height" secondItem="9KR-X3-YzB" secondAttribute="height" multiplier="1/20" id="hwJ-dT-DKM"/>
                             <constraint firstItem="D3m-Dy-OrT" firstAttribute="width" secondItem="9KR-X3-YzB" secondAttribute="width" multiplier="5/10" id="k0P-iG-PII"/>
+                            <constraint firstItem="Ny7-0u-NQv" firstAttribute="top" secondItem="pnG-QZ-veF" secondAttribute="bottom" constant="10" id="kBP-wG-ZYp"/>
                             <constraint firstAttribute="trailing" secondItem="pnG-QZ-veF" secondAttribute="trailing" id="ogn-F6-a4T"/>
                         </constraints>
                     </view>
@@ -193,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NgT-Vx-Xsm" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="-575"/>
+            <point key="canvasLocation" x="734" y="44"/>
         </scene>
     </scenes>
     <resources>
