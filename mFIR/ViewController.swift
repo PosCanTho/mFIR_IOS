@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     //MARK: ***UI Elements
-    @IBOutlet weak var txt: UITextField!
-    @IBOutlet weak var btnLogin: UIButton!
-    
+    @IBOutlet weak var txt: LocalizableTextField!
+    @IBOutlet weak var btnLogin: LocalizableButton!
+    var currentLocale = Prefs.shared.currentLocale()
     
     //MARK: ***Ui Event
     @IBAction func btnLogin(_ sender: UIButton) {// chuyển trang Home

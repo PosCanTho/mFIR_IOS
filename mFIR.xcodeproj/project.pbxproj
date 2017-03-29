@@ -24,6 +24,13 @@
 		BE4CE0F51E8B342F00C71582 /* NotificationDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CE0F41E8B342F00C71582 /* NotificationDetailController.swift */; };
 		BE4CE0F71E8B55EA00C71582 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4CE0F61E8B55EA00C71582 /* logout.png */; };
 		BE4CE0F91E8B56AB00C71582 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4CE0F81E8B56AB00C71582 /* user.png */; };
+		BE4CE0FB1E8B657300C71582 /* sync.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4CE0FA1E8B657300C71582 /* sync.png */; };
+		BE4CE1051E8BA42600C71582 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE4CE1031E8BA42600C71582 /* Localizable.strings */; };
+		BE4CE1121E8BB96D00C71582 /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CE10E1E8BB96D00C71582 /* LocalizationHelper.swift */; };
+		BE4CE1131E8BB96D00C71582 /* LocalizableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CE10F1E8BB96D00C71582 /* LocalizableButton.swift */; };
+		BE4CE1141E8BB96D00C71582 /* LocalizableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CE1101E8BB96D00C71582 /* LocalizableLabel.swift */; };
+		BE4CE1151E8BB96D00C71582 /* LocalizableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CE1111E8BB96D00C71582 /* LocalizableTextField.swift */; };
+		BE4CE11C1E8BE7BF00C71582 /* LogoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CE11B1E8BE7BF00C71582 /* LogoutController.swift */; };
 		F59022B61E84BB6F00728B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59022B51E84BB6F00728B9E /* AppDelegate.swift */; };
 		F59022B81E84BB6F00728B9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59022B71E84BB6F00728B9E /* ViewController.swift */; };
 		F59022BD1E84BB6F00728B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59022BC1E84BB6F00728B9E /* Assets.xcassets */; };
@@ -50,6 +57,21 @@
 		BE4CE0F41E8B342F00C71582 /* NotificationDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDetailController.swift; sourceTree = "<group>"; };
 		BE4CE0F61E8B55EA00C71582 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
 		BE4CE0F81E8B56AB00C71582 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		BE4CE0FA1E8B657300C71582 /* sync.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sync.png; sourceTree = "<group>"; };
+		BE4CE1001E8B9BF900C71582 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BE4CE1011E8B9BF900C71582 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
+		BE4CE1041E8BA42600C71582 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BE4CE1061E8BA4CC00C71582 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BE4CE1081E8BA4CC00C71582 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BE4CE10E1E8BB96D00C71582 /* LocalizationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
+		BE4CE10F1E8BB96D00C71582 /* LocalizableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableButton.swift; sourceTree = "<group>"; };
+		BE4CE1101E8BB96D00C71582 /* LocalizableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableLabel.swift; sourceTree = "<group>"; };
+		BE4CE1111E8BB96D00C71582 /* LocalizableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableTextField.swift; sourceTree = "<group>"; };
+		BE4CE1181E8BDC2F00C71582 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BE4CE1191E8BDC2F00C71582 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		BE4CE11A1E8BDC2F00C71582 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BE4CE11B1E8BE7BF00C71582 /* LogoutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutController.swift; sourceTree = "<group>"; };
+		BE4CE11D1E8C008500C71582 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F59022B21E84BB6F00728B9E /* mFIR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mFIR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59022B51E84BB6F00728B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F59022B71E84BB6F00728B9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +94,7 @@
 		BE3604441E857BC800EA21E1 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				BE4CE1091E8BA61600C71582 /* MultiLanguage */,
 				BE3604451E857BF400EA21E1 /* Prefs.swift */,
 				BE3604481E85915F00EA21E1 /* UI.swift */,
 				BE4CE0F21E8A65C100C71582 /* Reachability.swift */,
@@ -102,6 +125,7 @@
 		BE4CE0E61E8A127F00C71582 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BE4CE1021E8BA3C500C71582 /* lang */,
 				BE4CE0E71E8A129900C71582 /* images */,
 			);
 			name = Resources;
@@ -110,6 +134,7 @@
 		BE4CE0E71E8A129900C71582 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BE4CE0FA1E8B657300C71582 /* sync.png */,
 				BE4CE0F81E8B56AB00C71582 /* user.png */,
 				BE4CE0F61E8B55EA00C71582 /* logout.png */,
 				BE4CE0F01E8A35F100C71582 /* menu.png */,
@@ -119,6 +144,25 @@
 				BE4CE0E81E8A12AA00C71582 /* home.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		BE4CE1021E8BA3C500C71582 /* lang */ = {
+			isa = PBXGroup;
+			children = (
+				BE4CE1031E8BA42600C71582 /* Localizable.strings */,
+			);
+			name = lang;
+			sourceTree = "<group>";
+		};
+		BE4CE1091E8BA61600C71582 /* MultiLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				BE4CE10E1E8BB96D00C71582 /* LocalizationHelper.swift */,
+				BE4CE10F1E8BB96D00C71582 /* LocalizableButton.swift */,
+				BE4CE1101E8BB96D00C71582 /* LocalizableLabel.swift */,
+				BE4CE1111E8BB96D00C71582 /* LocalizableTextField.swift */,
+			);
+			name = MultiLanguage;
 			sourceTree = "<group>";
 		};
 		F59022A91E84BB6F00728B9E = {
@@ -164,6 +208,7 @@
 				BE4720B01E8608F7003E2AE0 /* NotificationsController.swift */,
 				BE4CE0E41E8A0FD500C71582 /* SideMenuController.swift */,
 				BE4CE0F41E8B342F00C71582 /* NotificationDetailController.swift */,
+				BE4CE11B1E8BE7BF00C71582 /* LogoutController.swift */,
 			);
 			name = viewcontrollers;
 			sourceTree = "<group>";
@@ -239,8 +284,10 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				vi,
+				ja,
+				en,
 			);
 			mainGroup = F59022A91E84BB6F00728B9E;
 			productRefGroup = F59022B31E84BB6F00728B9E /* Products */;
@@ -258,8 +305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE4CE0F11E8A35F100C71582 /* menu.png in Resources */,
+				BE4CE1051E8BA42600C71582 /* Localizable.strings in Resources */,
 				BE36044E1E85D1F200EA21E1 /* Main.storyboard in Resources */,
 				BE4CE0E91E8A12AA00C71582 /* home.png in Resources */,
+				BE4CE0FB1E8B657300C71582 /* sync.png in Resources */,
 				F59022C01E84BB6F00728B9E /* LaunchScreen.storyboard in Resources */,
 				BE4CE0EF1E8A14DC00C71582 /* notifications.png in Resources */,
 				BE4CE0EB1E8A13BF00C71582 /* settings.png in Resources */,
@@ -277,17 +326,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE4CE1131E8BB96D00C71582 /* LocalizableButton.swift in Sources */,
 				BE4CE0E51E8A0FD500C71582 /* SideMenuController.swift in Sources */,
 				BE4720AF1E8607EC003E2AE0 /* SettingsController.swift in Sources */,
 				BE3604461E857BF400EA21E1 /* Prefs.swift in Sources */,
 				BE3604491E85915F00EA21E1 /* UI.swift in Sources */,
 				BE4CE0F51E8B342F00C71582 /* NotificationDetailController.swift in Sources */,
 				BE4CE0E31E8A0D6700C71582 /* SWRevealViewController.m in Sources */,
+				BE4CE1141E8BB96D00C71582 /* LocalizableLabel.swift in Sources */,
 				F59022B81E84BB6F00728B9E /* ViewController.swift in Sources */,
 				BE4720B11E8608F7003E2AE0 /* NotificationsController.swift in Sources */,
+				BE4CE1121E8BB96D00C71582 /* LocalizationHelper.swift in Sources */,
+				BE4CE1151E8BB96D00C71582 /* LocalizableTextField.swift in Sources */,
 				F59022B61E84BB6F00728B9E /* AppDelegate.swift in Sources */,
 				BE4CE0F31E8A65C100C71582 /* Reachability.swift in Sources */,
 				BE4720AD1E8606BA003E2AE0 /* HomeController.swift in Sources */,
+				BE4CE11C1E8BE7BF00C71582 /* LogoutController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,14 +352,30 @@
 			isa = PBXVariantGroup;
 			children = (
 				BE36044D1E85D1F200EA21E1 /* Base */,
+				BE4CE1011E8B9BF900C71582 /* vi */,
+				BE4CE1191E8BDC2F00C71582 /* en */,
+				BE4CE11D1E8C008500C71582 /* ja */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE4CE1031E8BA42600C71582 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE4CE1041E8BA42600C71582 /* vi */,
+				BE4CE1081E8BA4CC00C71582 /* ja */,
+				BE4CE11A1E8BDC2F00C71582 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		F59022BE1E84BB6F00728B9E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F59022BF1E84BB6F00728B9E /* Base */,
+				BE4CE1001E8B9BF900C71582 /* vi */,
+				BE4CE1061E8BA4CC00C71582 /* ja */,
+				BE4CE1181E8BDC2F00C71582 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -317,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -366,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

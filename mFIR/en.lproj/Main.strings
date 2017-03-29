@@ -1,0 +1,49 @@
+
+/* Class = "UILabel"; text = "mFIR"; ObjectID = "13n-xk-pgk"; */
+"13n-xk-pgk.text" = "mFIR";
+
+/* Class = "UIViewController"; title = "NotificationsDetail"; ObjectID = "1JB-Ch-Gvx"; */
+"1JB-Ch-Gvx.title" = "NotificationsDetail";
+
+/* Class = "UIViewController"; title = "Notifications"; ObjectID = "8Rf-8d-JRM"; */
+"8Rf-8d-JRM.title" = "Notifications";
+
+/* Class = "UILabel"; text = "Logout"; ObjectID = "AIh-gr-QWi"; */
+"AIh-gr-QWi.text" = "Logout";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "P5d-37-Dza"; */
+"P5d-37-Dza.text" = "Label";
+
+/* Class = "UIViewController"; title = "Settings"; ObjectID = "TMU-yM-Q38"; */
+"TMU-yM-Q38.title" = "Settings";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "Xk9-l5-3Ns"; */
+"Xk9-l5-3Ns.title" = "Settings";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "YCu-Kz-TxX"; */
+"YCu-Kz-TxX.normalTitle" = "Login";
+
+/* Class = "UINavigationItem"; title = "Notifications"; ObjectID = "aAU-4e-Smg"; */
+"aAU-4e-Smg.title" = "Notifications";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "aeR-7y-4S5"; */
+"aeR-7y-4S5.text" = "Settings";
+
+/* Class = "UILabel"; text = "Ngôn ngữ"; ObjectID = "b49-Aa-r88"; */
+"b49-Aa-r88.text" = "Language";
+
+
+/* Class = "UIButton"; normalTitle = "Chuyển trang"; ObjectID = "bpd-zn-tf4"; */
+"bpd-zn-tf4.normalTitle" = "Chuyển trang";
+
+/* Class = "UILabel"; text = "Đổng bộ dữ liệu"; ObjectID = "cNP-Ns-ejl"; */
+"cNP-Ns-ejl.text" = "Data synchronization";
+
+/* Class = "UILabel"; text = "Notifications"; ObjectID = "jCx-aa-EiJ"; */
+"jCx-aa-EiJ.text" = "Notifications";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "knH-Iw-dcy"; */
+"knH-Iw-dcy.text" = "Home";
+
+/* Class = "UILabel"; text = "Dũng xinh"; ObjectID = "qEr-69-zCt"; */
+"qEr-69-zCt.text" = "Dũng xinh";

@@ -60,3 +60,13 @@ extension UITextField{
         return (self.text?.characters.count)! == 0
     }
 }
+
+
+//******** ******** ******* Đa ngôn ngữ ******** ******** *******
+extension UIView {
+    func onUpdateLocale() {
+        for subView: UIView in self.subviews {
+            subView.onUpdateLocale()
+        }
+    }
+}
