@@ -2,7 +2,7 @@
 //  Checkbox.h
 //  mFIR
 //
-//  Created by Tran Bao Toan on 3/24/17.
+//  Created by Tran Bao Toan on 3/27/17.
 //  Copyright © 2017 poscantho. All rights reserved.
 //
 
@@ -11,6 +11,5 @@
 
 
 #endif /* Checkbox_h */
-
 
 #import "BEMCheckBox.h"

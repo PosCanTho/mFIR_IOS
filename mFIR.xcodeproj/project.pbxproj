@@ -17,13 +17,18 @@
 		0432BF651E87805D002FF000 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432BF641E87805D002FF000 /* Student.swift */; };
 		0432BF671E878087002FF000 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432BF661E878087002FF000 /* User.swift */; };
 		0432BF691E878099002FF000 /* UserReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432BF681E878099002FF000 /* UserReferences.swift */; };
+		A426A5C51E8A016B003AA054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A426A5C31E8A016B003AA054 /* Main.storyboard */; };
+		A4387F851E88FFE1009BA589 /* ReportIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4387F841E88FFE1009BA589 /* ReportIssue.swift */; };
 		A44BFFBB1E88A30500528A0F /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BFFB41E88A30500528A0F /* BEMAnimationManager.m */; };
 		A44BFFBC1E88A30500528A0F /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BFFB61E88A30500528A0F /* BEMCheckBox.m */; };
 		A44BFFBD1E88A30500528A0F /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BFFB81E88A30500528A0F /* BEMCheckBoxGroup.m */; };
 		A44BFFBE1E88A30500528A0F /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BFFBA1E88A30500528A0F /* BEMPathManager.m */; };
+		A44BFFC21E88A89100528A0F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44BFFC11E88A89100528A0F /* SecondViewController.swift */; };
+		A44BFFC41E88AA6400528A0F /* FacilityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44BFFC31E88AA6400528A0F /* FacilityTableViewController.swift */; };
+		A44BFFC61E88AD5800528A0F /* IssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44BFFC51E88AD5800528A0F /* IssueViewController.swift */; };
+		A44BFFC81E88AF4600528A0F /* IssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44BFFC71E88AF4600528A0F /* IssueTableViewCell.swift */; };
 		F59022B61E84BB6F00728B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59022B51E84BB6F00728B9E /* AppDelegate.swift */; };
 		F59022B81E84BB6F00728B9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59022B71E84BB6F00728B9E /* ViewController.swift */; };
-		F59022BB1E84BB6F00728B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59022B91E84BB6F00728B9E /* Main.storyboard */; };
 		F59022BD1E84BB6F00728B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59022BC1E84BB6F00728B9E /* Assets.xcassets */; };
 		F59022C01E84BB6F00728B9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59022BE1E84BB6F00728B9E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -39,6 +44,8 @@
 		0432BF641E87805D002FF000 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		0432BF661E878087002FF000 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0432BF681E878099002FF000 /* UserReferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserReferences.swift; sourceTree = "<group>"; };
+		A426A5C41E8A016B003AA054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4387F841E88FFE1009BA589 /* ReportIssue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportIssue.swift; sourceTree = "<group>"; };
 		A44BFFB31E88A30500528A0F /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimationManager.h; sourceTree = "<group>"; };
 		A44BFFB41E88A30500528A0F /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimationManager.m; sourceTree = "<group>"; };
 		A44BFFB51E88A30500528A0F /* BEMCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBox.h; sourceTree = "<group>"; };
@@ -47,11 +54,14 @@
 		A44BFFB81E88A30500528A0F /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
 		A44BFFB91E88A30500528A0F /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
 		A44BFFBA1E88A30500528A0F /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
-		A44BFFBF1E88A32000528A0F /* Checkbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Checkbox.h; sourceTree = "<group>"; };
+		A44BFFC01E88A72C00528A0F /* Checkbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Checkbox.h; path = ../Checkbox.h; sourceTree = "<group>"; };
+		A44BFFC11E88A89100528A0F /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A44BFFC31E88AA6400528A0F /* FacilityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityTableViewController.swift; sourceTree = "<group>"; };
+		A44BFFC51E88AD5800528A0F /* IssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueViewController.swift; sourceTree = "<group>"; };
+		A44BFFC71E88AF4600528A0F /* IssueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueTableViewCell.swift; sourceTree = "<group>"; };
 		F59022B21E84BB6F00728B9E /* mFIR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mFIR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59022B51E84BB6F00728B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F59022B71E84BB6F00728B9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F59022BA1E84BB6F00728B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F59022BC1E84BB6F00728B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F59022BF1E84BB6F00728B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F59022C11E84BB6F00728B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,8 +119,8 @@
 				F59022C81E84BC4800728B9E /* models */,
 				F59022C71E84BC3C00728B9E /* viewcontrollers */,
 				F59022B51E84BB6F00728B9E /* AppDelegate.swift */,
-				A44BFFBF1E88A32000528A0F /* Checkbox.h */,
-				F59022B91E84BB6F00728B9E /* Main.storyboard */,
+				A44BFFC01E88A72C00528A0F /* Checkbox.h */,
+				A426A5C31E8A016B003AA054 /* Main.storyboard */,
 				F59022BC1E84BB6F00728B9E /* Assets.xcassets */,
 				F59022BE1E84BB6F00728B9E /* LaunchScreen.storyboard */,
 				F59022C11E84BB6F00728B9E /* Info.plist */,
@@ -122,6 +132,10 @@
 			isa = PBXGroup;
 			children = (
 				F59022B71E84BB6F00728B9E /* ViewController.swift */,
+				A44BFFC11E88A89100528A0F /* SecondViewController.swift */,
+				A44BFFC31E88AA6400528A0F /* FacilityTableViewController.swift */,
+				A44BFFC51E88AD5800528A0F /* IssueViewController.swift */,
+				A44BFFC71E88AF4600528A0F /* IssueTableViewCell.swift */,
 			);
 			name = viewcontrollers;
 			sourceTree = "<group>";
@@ -139,6 +153,7 @@
 				0432BF641E87805D002FF000 /* Student.swift */,
 				0432BF661E878087002FF000 /* User.swift */,
 				0432BF681E878099002FF000 /* UserReferences.swift */,
+				A4387F841E88FFE1009BA589 /* ReportIssue.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -224,9 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A426A5C51E8A016B003AA054 /* Main.storyboard in Resources */,
 				F59022C01E84BB6F00728B9E /* LaunchScreen.storyboard in Resources */,
 				F59022BD1E84BB6F00728B9E /* Assets.xcassets in Resources */,
-				F59022BB1E84BB6F00728B9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0432BF691E878099002FF000 /* UserReferences.swift in Sources */,
+				A44BFFC21E88A89100528A0F /* SecondViewController.swift in Sources */,
 				A44BFFBC1E88A30500528A0F /* BEMCheckBox.m in Sources */,
 				0432BF571E877FA5002FF000 /* ComponentType.swift in Sources */,
 				A44BFFBD1E88A30500528A0F /* BEMCheckBoxGroup.m in Sources */,
@@ -250,7 +266,11 @@
 				0432BF5B1E877FF5002FF000 /* FacilityType.swift in Sources */,
 				0432BF591E877FC8002FF000 /* Facility.swift in Sources */,
 				0432BF5D1E878011002FF000 /* Instructor.swift in Sources */,
+				A44BFFC41E88AA6400528A0F /* FacilityTableViewController.swift in Sources */,
+				A44BFFC81E88AF4600528A0F /* IssueTableViewCell.swift in Sources */,
 				F59022B61E84BB6F00728B9E /* AppDelegate.swift in Sources */,
+				A44BFFC61E88AD5800528A0F /* IssueViewController.swift in Sources */,
+				A4387F851E88FFE1009BA589 /* ReportIssue.swift in Sources */,
 				A44BFFBB1E88A30500528A0F /* BEMAnimationManager.m in Sources */,
 				0432BF671E878087002FF000 /* User.swift in Sources */,
 			);
@@ -259,10 +279,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F59022B91E84BB6F00728B9E /* Main.storyboard */ = {
+		A426A5C31E8A016B003AA054 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F59022BA1E84BB6F00728B9E /* Base */,
+				A426A5C41E8A016B003AA054 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
