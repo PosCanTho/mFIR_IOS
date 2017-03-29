@@ -15,16 +15,18 @@ class HomeController: UIViewController{
     
     
     //MARK: *** UI EVENTS
-    @IBAction func btnNotifications(_ sender: UIButton) {
-        performSegue(withIdentifier: "SegueNotifications", sender: self)
-    }
-    @IBAction func btnSettings(_ sender: UIButton) {
-        performSegue(withIdentifier: "SegueSetting", sender: self)
-    }
+//    @IBAction func btnNotifications(_ sender: UIButton) {
+//        performSegue(withIdentifier: "SegueNotifications", sender: self)
+//    }
+//    @IBAction func btnSettings(_ sender: UIButton) {
+//        performSegue(withIdentifier: "SegueSetting", sender: self)
+//    }
     
     
     //MARK: ***UI CONTROLLER
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addSideMenu()
     }
 }

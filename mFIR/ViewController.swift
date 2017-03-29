@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     //MARK: ***Ui Event
     @IBAction func btnLogin(_ sender: UIButton) {// chuyển trang Home
-        performSegue(withIdentifier: "SegueHome", sender: self)
+        performSegue(withIdentifier: "segueHome", sender: self)
     }
 
     //MARK:  ***UI Controller
