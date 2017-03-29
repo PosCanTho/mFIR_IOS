@@ -11,7 +11,7 @@ import UIKit
 class SideMenuController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     //MARK: *** data model
-    let ids = ["sideHomeID", "sideNotificationsID", "sideSettingsID"]
+    let ids = ["sideUser", "sideHomeID", "sideNotificationsID", "sideSettingsID", "sideLogout"]
     //UI:
     
     //Controller

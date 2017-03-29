@@ -66,8 +66,37 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sideUser" rowHeight="88" id="Tdc-Td-EMq">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tdc-Td-EMq" id="v0j-ro-RHg">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="sAm-7c-MAs">
+                                                    <rect key="frame" x="8" y="8" width="99" height="73"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="73" id="ArL-V7-qTG"/>
+                                                        <constraint firstAttribute="width" constant="99" id="TPj-7Z-9O3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dũng xinh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEr-69-zCt">
+                                                    <rect key="frame" x="138" y="23" width="160" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sAm-7c-MAs" firstAttribute="leading" secondItem="v0j-ro-RHg" secondAttribute="leading" constant="8" id="GN3-RJ-iTY"/>
+                                                <constraint firstAttribute="bottom" secondItem="sAm-7c-MAs" secondAttribute="bottom" constant="6" id="MQi-Nd-dhC"/>
+                                                <constraint firstItem="sAm-7c-MAs" firstAttribute="top" secondItem="v0j-ro-RHg" secondAttribute="top" constant="8" id="z2n-kc-gQb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sideHomeID" id="Mpk-KV-zYU">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="116" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="Mpk-KV-zYU" id="ozF-ws-otq">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -111,13 +140,13 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sideNotificationsID" id="SSS-ba-oMC">
-                                        <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="160" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="SSS-ba-oMC" id="o2X-xF-m1F">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="notifications.png" translatesAutoresizingMaskIntoConstraints="NO" id="VqZ-bu-w5q">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="notifications.png" translatesAutoresizingMaskIntoConstraints="NO" id="VqZ-bu-w5q">
                                                     <rect key="frame" x="20" y="0.0" width="32" height="32"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="32" id="PMB-6o-Oyh"/>
@@ -149,13 +178,13 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sideSettingsID" id="yht-MC-9eg">
-                                        <rect key="frame" x="0.0" y="116" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="204" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yht-MC-9eg" id="iXD-Qg-DJL">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="d3H-Tb-1G3">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="d3H-Tb-1G3">
                                                     <rect key="frame" x="22" y="1" width="32" height="32"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeR-7y-4S5">
@@ -180,10 +209,31 @@
                                             <segue destination="okV-Oo-V2C" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="SDa-jU-gJ4"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sideLogout" id="7J4-ah-YP1" userLabel="sideLogout">
+                                        <rect key="frame" x="0.0" y="248" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7J4-ah-YP1" id="DT7-nW-MU3">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logout.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Pu-nr-ig9">
+                                                    <rect key="frame" x="22" y="8" width="41" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIh-gr-QWi">
+                                                    <rect key="frame" x="84" y="14" width="156" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="GqH-Uk-utX" id="evp-px-jar"/>
-                                    <outlet property="delegate" destination="GqH-Uk-utX" id="4LQ-Sw-3kc"/>
+                                    <outlet property="dataSource" destination="GqH-Uk-utX" id="dJx-Bp-Aff"/>
+                                    <outlet property="delegate" destination="GqH-Uk-utX" id="pyn-Tx-UD1"/>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mFIR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13n-xk-pgk">
@@ -210,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZEh-dZ-byQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4054" y="345"/>
+            <point key="canvasLocation" x="4053.75" y="344.36619718309862"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="oio-g3-q9v">
@@ -267,8 +317,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="GqH-Uk-utX" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="yQd-Oh-1a3"/>
                         <segue destination="c09-bT-N1t" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="SFA-NN-7w8"/>
+                        <segue destination="GqH-Uk-utX" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="emp-Cy-hGc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XP0-Uf-DKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -348,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTn-CC-bHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9514" y="1436"/>
+            <point key="canvasLocation" x="8869" y="1402"/>
         </scene>
         <!--Home Controller-->
         <scene sceneID="dGN-kl-NKm">
@@ -426,8 +476,10 @@
     </scenes>
     <resources>
         <image name="home.png" width="24" height="24"/>
+        <image name="logout.png" width="24" height="24"/>
         <image name="notifications.png" width="32" height="32"/>
         <image name="settings.png" width="32" height="32"/>
+        <image name="user.png" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="SVq-qh-MOT"/>
