@@ -11,7 +11,7 @@ import UIKit
 
 protocol IssueTableViewCellDelegate {
     func btnChecked(cell: IssueTableViewCell)
-   
+    func textFieldDidChange(cell: IssueTableViewCell)
 }
 
 class IssueTableViewCell: UITableViewCell, BEMCheckBoxDelegate {
@@ -22,6 +22,8 @@ class IssueTableViewCell: UITableViewCell, BEMCheckBoxDelegate {
     @IBOutlet weak var checkbox: BEMCheckBox!
 
      var delegate: IssueTableViewCellDelegate?
+    
+       var listChecked: Array<ReportIssue> = Array()
     
     @IBAction func btnChecked(_ sender: Any) {
         if let _ = delegate {
@@ -40,7 +42,8 @@ class IssueTableViewCell: UITableViewCell, BEMCheckBoxDelegate {
         lbComponent.text = reportIssue.componentName
         checkbox.setOn(reportIssue.checked, animated: false)
         checkbox.delegate = self
-
+        btnCamera.isHidden = true
+        lbDescription.isHidden = false
     }
     
     func didTap(_ checkBox: BEMCheckBox) {
@@ -53,7 +56,10 @@ class IssueTableViewCell: UITableViewCell, BEMCheckBoxDelegate {
         }
     }
     func textFieldDidChange(_ textField: UITextField) {
-        print(lbDescription.text!)
+        if let _ = delegate {
+            delegate?.textFieldDidChange(cell: self)
+        }
+//        print(lbDescription.text!)
     }
 
 }
